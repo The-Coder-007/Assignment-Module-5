@@ -1,0 +1,7 @@
+Get data in ascending by First_name ---->
+SELECT * FROM EMPLOYEE ORDER BY First_name ASC;
+
+
+
+Get data in Descending by Salary --->
+SELECT * FROM EMPLOYEE ORDER BY Salary DESC;

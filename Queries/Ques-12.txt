@@ -1,0 +1,8 @@
+--Retrieve All data from Salesperson--->
+
+SELECT * FROM Salesperson;
+
+
+--Retrieve All data from Customer--->
+
+SELECT * FROM Customer;

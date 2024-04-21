@@ -1,0 +1,1 @@
+SELECT First_name,Joining_date,Salary From Employee;

@@ -1,0 +1,5 @@
+-- In the given table there is no column data name as "Rome" but it has "Roe" so IF we get the data as "Roe" the i have to put "Roe" in the Query instead of "Rome'--->
+
+SELECT *
+FROM Customer
+WHERE RATING <= 100 OR (RATING <= 100 AND CITY = 'Rome');

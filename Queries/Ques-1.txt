@@ -1,0 +1,49 @@
+Creating table for Student ---->
+
+CREATE TABLE Student
+(
+Rollno INT PRIMARY KEY NOT NULL,
+s_name VARCHAR(30) NOT NULL,
+Branch VARCHAR(50) NOT NULL
+);
+
+Inserting data into Student table --->
+
+INSERT INTO  Student
+(
+Rollno,
+s_name,
+Branch
+)
+VALUES
+(1,'Jay', 'Computer Science'),
+(2,'Suhani', 'Electronic and Com'),
+(3, 'Kriti', 'Electronic and Com');
+
+Creating table for Exam with Foreign key ---->
+
+CREATE TABLE Exam
+(
+Rollno INT NOT NULL,
+S_code VARCHAR(20) NOT NULL,
+Marks INT NOT NULL,
+P_code VARCHAR(20) NOT NULL,
+CONSTRAINT exm_frgn_key FOREIGN KEY (Rollno) REFERENCES Student(Rollno)
+);
+
+Inserting data into Exam table ---->
+
+INSERT INTO  Exam
+(
+Rollno,
+S_code,
+Marks,
+P_code
+)
+VALUES
+(1,'CS11', 50, 'CS'),
+(1,'CS12', 60,'CS'),
+(2, 'EEC101', 66,'EC'),
+(2, 'EC102', 70, 'EC' ),
+(3, 'EC101', 45, 'EC'),
+(3, 'EC102', 50, 'EC');
