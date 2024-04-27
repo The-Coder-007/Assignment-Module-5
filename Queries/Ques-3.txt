@@ -1,1 +1,3 @@
-SELECT First_name FROM Employee WHERE First_name = 'Tom';
+To retrieve the First_Name from the employee table using the name “Tom” as the Employee Name
+
+SELECT First_name FROM Employee WHERE Employee_name = 'Tom';
