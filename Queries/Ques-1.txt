@@ -28,7 +28,7 @@ Rollno INT NOT NULL,
 S_code VARCHAR(20) NOT NULL,
 Marks INT NOT NULL,
 P_code VARCHAR(20) NOT NULL,
-CONSTRAINT exm_frgn_key FOREIGN KEY (Rollno) REFERENCES Student(Rollno)
+CONSTRAINT  FOREIGN KEY (Rollno) REFERENCES Student(Rollno)
 );
 
 Inserting data into Exam table ---->
